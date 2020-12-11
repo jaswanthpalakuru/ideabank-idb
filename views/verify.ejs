@@ -1,0 +1,32 @@
+<%- include("partials/header") -%>
+<div class="container div1">
+  <center>
+  <h1 style="margin-top: 30px">Idea Hub</h1>
+  <!-- <p class="tag"><sub>(A Hub of Intelligence)</sub></p> -->
+  <p style="font-size : 20px">An ideas bank is a widely available shared resource where people post, exchange, discuss, and polish new ideas.</p>
+  </center>
+  <hr>
+</div>
+
+<div class="container">
+  <center>
+  <form style="width: 25%" action="/verify" method="post">
+  <!-- <div class="form-row"> -->
+    <!-- <div class="form-group col-md-6"> -->
+      <label for="inputEmail4">Enter OTP</label>
+      <input type="text" class="form-control" id="inputEmail4" name="otp" placeholder="OTP">
+    <!-- </div> -->
+  <!-- </div> -->
+  <button type="submit" style="margin-top: 10px" class="btn btn-primary">Verify</button>
+</form>
+</center>
+  <!-- <form style="width: 50%" action="/verify" method="post">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter the otp</label>
+    <input type="email" class="form-control"  placeholder="Enter OTP" name="otp">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form> -->
+</div>
+
+<%- include("partials/footer") -%>

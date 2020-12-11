@@ -1,0 +1,70 @@
+<%- include("partials/header") -%>
+<div class="container div1" style="width: 50%; margin-top: 2%;">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-5 col-5">
+      <h1>Idea Bank</h1>
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="container" style="width: 50%; margin: 10% 0 0 25%">
+<center>
+  <div class="form-group">
+<form class="" action="/userhome" method="post">
+    <!-- <label>Email address <span class="star">*</span></label>
+      <input type="email" class="form-control" placeholder="email@email.com" name="email"> -->
+      <div class="form-group row">
+        <div class="col-sm-4 col-5 col-lg-3 col-md-3">
+          <label for="inputEmail3" class=" col-form-label">Email <span>:</span><span class="star">*</span></label>
+        </div>
+        <div class="col-sm-8 col-7 col-md-9 col-lg-9">
+          <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Email">
+        </div>
+      </div>
+    <!-- <label>Password <span class="star">*</span></label>
+    <input type="password" class="form-control" placeholder="password" id="exampleInputPassword1" name="password"> -->
+    <div class="form-group row">
+      <div class="col-sm-4 col-5 col-lg-3 col-md-3">
+        <label for="inputPassword3" class="col-form-label">Password<span>:</span><span class="star">*</span></label>
+      </div>
+      <div class="col-sm-8 col-7 col-md-9 col-lg-9">
+        <input type="password" class="form-control" id="inputPassword3" name="password" placeholder="Password">
+      </div>
+    </div>
+  <!-- <div class="row" style="margin-top: 9px">
+    <button type="submit" style="float: left" class="btn btn-primary mar">Login</button>
+  </div> -->
+  <div class="form-group row">
+    <div class="col-sm-7 col-7 col-md-5 col-lg-5">
+      <button type="submit" style="float: right" class="btn btn-primary">Login</button>
+    </div>
+  </div>
+
+</form>
+</div>
+</center>
+</div>
+<div style="width: 50%; margin: 0 0 0 25%" class="container">
+  <div class="row">
+    <div class="col-sm-4 col-6 col-md-5 col-lg-5">
+      <form class="" action="/forgotpassword" method="post">
+        <button type="submit" style="float: right" class="btn btn-outline-secondary" name="button">forgot password?</button>
+      </form>
+    </div>
+    <div class="col-sm-4 col-6 col-md-4 col-lg-4">
+      <form class="" action="/newuser" method="post">
+        <button type="submit" class="btn btn-outline-secondary" name="button">New user?</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container row">
+<div class="col-sm-12">
+  <form class="" action="/home" method="post">
+    <button type="submit" style="float: right; margin-top: -45px;" class="btn btn-primary" name="button">Back</button>
+  </form>
+</div>
+</div>
+<%- include("partials/footer") -%>

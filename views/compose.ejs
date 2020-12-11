@@ -1,0 +1,46 @@
+<%- include("partials/header"); -%>
+<div class="container div1">
+  <center>
+    <h1>Compose Idea</h1>
+    <p>(All fields are mandatory)</p>
+    </center>
+    <div class="row">
+      <div class="col-sm-9 col-lg-9 col-9 col-md-9">
+      </div>
+      <div class="col-sm-3 col-lg-3 col-md-3 col-3">
+        <p style="float:center;font-size: 15px"><%= userID %></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-2 col-2">
+
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-8 col-8">
+        <!-- <center> -->
+        <form class="" action="/allideas" method="post">
+          <div class="form-group">
+            <label>Idea Title :</label>
+            <input class="form-control" type="text" name="postTitle">
+            <label>Summary :</label>
+            <input class="form-control" type="text" name="postMember">
+            <label>Description :</label>
+            <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+          </div>
+          <center>
+          <button class="btn btn-outline-primary" type="submit">Publish</button>
+          </center>
+        </form>
+        <!-- </center> -->
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-2 col-2">
+
+      </div>
+    </div>
+  <!-- </center> -->
+        <form action="/back" style="float: right" method="post">
+          <button type="submit" class="btn btn-primary">Back</button>
+        </form>
+</div>
+
+<%- include("partials/footer"); -%>

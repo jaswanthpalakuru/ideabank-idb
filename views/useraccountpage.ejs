@@ -1,0 +1,72 @@
+<%- include("partials/header") -%>
+
+  <div class="container div1">
+    <!-- <center> -->
+      <div class="row">
+        <div class="col-sm-7 col-8 col-lg-7">
+          <h1 style="float:right;margin-top: 10px">Idea Bank</h1>
+        </div>
+        <div class="col-sm-5 col-4 col-lg-5">
+          <!-- <form action="/compose" method="post">
+            <button type="submit" class="btn btn-secondary" style="float: right;margin-top: 10px" name="button">Compose Idea</button>
+          </form> -->
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-9">
+      </div>
+      <div class="col-sm-3">
+        <p style="float:right;font-size: 15px"><%= userID %></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-7 col-lg-7 col-8">
+        <h3 style="float: right; margin-right: -10px">Published Ideas</h3>
+      </div>
+      <div class="col-lg-5 col-sm-5 col-4">
+        <form action="/compose" method="post">
+          <button type="submit" class="btn btn-secondary" style="float: right" name="button">Compose Idea</button>
+        </form>
+      </div>
+      </div>
+    <!-- </center> -->
+    <hr>
+    <div class="row">
+      <div class="col-sm-3 col-3 col-md-3 col-lg-3">
+      </div>
+      <div class="col-sm-6 col-6 col-md-6 col-lg-6">
+        <% for(let i=(ideas.length)-1;i>=0;i--){%>
+        <!-- <div class="col-sm-6"> -->
+        <div class="row">
+          <div class="col-3 col-sm-5 col-md-5 col-lg-4">
+          </div>
+          <div class="col-5 col-sm-5 col-md-5 col-lg-4">
+            <h3 class="text-center"><%=ideas[i].title%></h3>
+          </div>
+          <div class="col-4 col-sm-2 col-md-2 col-lg-2">
+            <form class="" action="/deleteIdea" method="post" >
+            <button class="btn" name="ideaID" style="float: right" value="<%= ideas[i]._id %>"><i class="fa fa-trash"></i></button>
+          </form>
+          </div>
+        </div>
+          <p class="text-center"><%= ideas[i].summary%></p>
+        <!-- </div> -->
+
+    <% } %>
+      </div> 
+      <div class="col-sm-3 col-3 col-md-3 col-lg-3">
+
+      </div>
+      </div>
+  <div class="row">
+    <div class="col-sm-10">
+    </div>
+    <div class="col-sm-2">
+    <form class="" action="/back" method="post">
+      <button type="submit" class="btn btn-primary" style="float: right">Back</button>
+    </form>
+  </div>
+  </div>
+</div>
+
+<%- include("partials/footer") -%>

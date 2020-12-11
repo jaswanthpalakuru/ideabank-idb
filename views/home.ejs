@@ -1,0 +1,32 @@
+<%- include("partials/header") -%>
+<div class="container div1">
+  <center>
+  <h1 style="margin-top: 30px">Idea Hub</h1>
+  <!-- <p class="tag"><sub>(A Hub of Intelligence)</sub></p> -->
+  <p style="font-size : 20px">An ideas bank is a widely available shared resource where people post, exchange, discuss, and polish new ideas.</p>
+  </center>
+  <hr>
+</div>
+<div class="container">
+  <center>
+  <div class="row">
+    <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+          <form class="" action="/knowabout" method="post">
+            <button type="submit" class="btn btn-outline-success">Know about IB</button>
+          </form>
+    </div>
+    <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+          <form class="" action="/register" method="get">
+            <button type="submit"  class="btn btn-outline-primary">Register</button>
+          </form>
+    </div>
+    <div class="col-lg-4 col-4 col-sm-4 col-md-4">
+      <form class="" action="/login" method="post">
+        <button type="submit" class="btn btn-outline-info" name="button">Log in</button>
+      </form>
+    </div>
+
+  </div>
+  </center>
+</div>
+<%- include("partials/footer") -%>
